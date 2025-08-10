@@ -1,1 +1,4 @@
 
+Displays current rolls lucky, unlucky, bust, fold etc.
+
+/cor - Open/close the configuration panel
