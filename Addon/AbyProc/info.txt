@@ -1,1 +1,1 @@
-
+Addon is still under construction right now its mainly just to show what weaponskills, magic etc to use on what days and times as well as to flag when you proc.  Will update it to be more functional in the future to assist with correct weaponskills to use.
