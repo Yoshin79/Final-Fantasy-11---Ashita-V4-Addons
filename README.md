@@ -1,4 +1,4 @@
-# Final-Fantasy-11---Ashita-V4-Addons   Currenly adding just to Releases - Removed Everything Temporarily from addon section will be updating all to new Version of Ashita and removing Bugs. Will be posting updated ones through April 2026 and later this spring.
+# Final Fantasy 11 Ashita V4 Addons   Currenly I am adding to Releases - Removed Everything Temporarily from addon section will be updating all to newest Version of Ashita and removing Bugs. Will be posting updates through April 2026 and later this spring.
 Addons for Ashita V4.3.0.2
 
 Hello everyone.  These addons were made or adjusted and edited with the help of Ai  .  I have tested and used while multi boxing multiple accounts on a daily basis and have had no issues and they are still being updated as I go, with that said use at your own risk.
