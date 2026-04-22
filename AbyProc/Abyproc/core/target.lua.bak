@@ -1,0 +1,51 @@
+-- core/target.lua
+local target = {
+    current = "No Target",
+    index = 0,
+    last_check = 0,
+    staggered = false,
+    stagger_time = 0
+};
+
+function target.initialize()
+    target.update();
+end
+
+function target.set(name)
+    target.current = name;
+    print(string.format("[%s] Target manually set to: %s", addon.name, name));
+end
+
+function target.update()
+    local success = pcall(function()
+        local target_index = AshitaCore:GetMemoryManager():GetTarget():GetTargetIndex(0);
+        if target_index > 0 then
+            local entity = GetEntity(target_index);
+            if entity and entity.Name then
+                target.current = entity.Name;
+                target.index = target_index;
+            else
+                target.current = "No Target";
+                target.index = 0;
+            end
+        else
+            target.current = "No Target";
+            target.index = 0;
+        end
+    end);
+    
+    if not success then
+        print("[abyproc] Error updating target");
+    end
+end
+
+function target.reset_procs()
+    -- If you have a procs module, call its reset function
+    local procs = require('core.procs');
+    if procs and procs.reset then
+        procs.reset();
+    end
+    print("[abyproc] Reset all proc tracking");
+end
+
+return target;
