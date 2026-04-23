@@ -20,8 +20,6 @@ and per-character completion checkboxes — all inside a resizable ImGui window.
    ```
    Or add it to your `Ashita/config/boot/default.lua` to auto-load:
    ```lua
-   addon.load('missiontracker')
-   ```
 
 ---
 
